@@ -1,0 +1,218 @@
+﻿Chapter three controllstetment
+C++ provides several types of selection statements: 
+1,one-way if statements, 
+2,two-way if-else statements, 
+3,nested if and multi-way if-else statements, 
+
+//program of one way if statement
+#include<iostream>
+using namespace std;
+int main( )
+{
+int i = 12;
+if (i > 10)
+{
+
+cout<<"10 is less than 12";
+}
+
+cout<<"not inside if condition";
+}
+
+Write a program that prompts the user to enter an integer. If the number is a multiple of 5, display Hello Five. Also, if the number is even, display Hello Even. 
+//program the numberis amultiple of display hellofive
+ #include <iostream>   
+  using namespace std;          
+  int main() {  
+  int number;         
+   cout << "Enter an integer: ";  
+  cin >> number;        
+   if (number % 5 == 0)  cout << "Hello Five!" << endl;          
+  if (number % 2 == 0)  cout << "Hello Even!" << endl;        
+ return 0;           
+ }
+
+
+
+
+
+ //Program of two way if elsestatement
+#include<iostream>
+
+using namespace std;
+int main( )
+{
+int num = 5;
+if (num > 10)
+
+cout<<"num is greater than 10";
+else
+
+cout<<"num is smaller than 10";
+return 0;
+}
+
+//programof multiple if stetmentcheeckstudent gread
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  int grade;
+  cout<<"enterstudent grade";
+  cin>>grade;
+ if (grade>= 90)  
+  cout<<"\n you get grade A";
+ else if (grade >= 80)    cout<<"\n you get grade A "; 
+ else if (grade >= 70)    cout <<"\n You Get Grade C " ;
+ else if (grade >= 60)    cout <<"\n You Get Grade D ";
+ else 
+		{
+ 		 cout << "\n You Get Grade F";
+		}
+		 return 0;
+     }
+
+
+
+
+
+
+
+
+//programme nested if steatment
+#include<iostream>
+using namespace std;
+int main( )
+{
+int i = 110;
+if (i == 110)
+{
+if (i < 115)
+
+cout<<"i is smaller than 115";
+if (i < 112)
+
+cout<<"i is smaller than 112 too";
+else
+
+cout<<"i is greater than 115";
+}
+return 0;
+}
+ //program swich stetment
+
+#include<iostream>
+using namespace std;
+int main(){
+
+int day = 4;
+switch (day) {
+  case 1:
+    cout << "Monday";
+    break;
+  case 2:
+    cout << "Tuesday";
+    break;
+  case 3:
+    cout << "Wednesday";
+    break;
+  case 4:
+    cout << "Thursday";
+    break;
+  case 5:
+    cout << "Friday";
+    break;
+  case 6:
+    cout << "Saturday";
+    break;
+  case 7:
+    cout << "Sunday";
+    break;
+default:
+cout<<"unknown day";
+}
+return 0;
+
+ //while loop program
+#include<iostream>
+using namespace std;
+int main( )
+{
+int a = 10;
+
+while( a < 20 ) {
+
+cout << "value of a: " << a << endl;
+
+a++;
+}
+return 0;
+}
+//program do while loop
+#include<iostream>
+using namespace std;
+int main( )
+{
+int a = 10;
+do {
+
+cout << "value of a: " << a << endl;
+
+a = a + 1;
+} while( a < 20 );
+return 0;
+}
+
+//program the break stetment
+#include<iostream>
+using namespace std;
+int main( )
+{
+for(int i=0; i<=10; i++) {
+ if (i==4){
+break;
+}
+cout << "i "<< endl;
+}
+return 0;
+}
+    
+ //program continue
+#include<iostream>
+using namespace std;
+int main( )
+{
+for(int i=0; i<=10; i++) {
+ if (i==5){
+continue ;
+}
+cout << "i "<< endl;
+}
+return 0;
+}
+
+// goto Statement
+// This program calculates the average of numbers entered by the user.
+ // If the user enters a negative number, it ignores the number and
+ // calculates the average number entered before it.
+ # include <iostream>
+ using namespace std;
+ int main() {
+ float num, average, sum = 0.0;
+ int i, n;
+ cout << "Maximum number of inputs: ";
+ cin >> n; for(i = 1;
+ i <= n; ++i) {
+ cout << "Enter n" << i << ": ";
+ cin >> num; if(num < 0.0) {
+ // Control of the program move to jump:
+ goto jump;
+ }
+ sum += num;
+ }
+ jump: average = sum / (i - 1);
+ cout << "\nAverage = " << average;
+ return 0;
+ }
+
