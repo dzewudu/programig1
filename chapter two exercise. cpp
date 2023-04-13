@@ -1,0 +1,153 @@
+﻿    
+1,exercise 
+
+//programtofindtheproduct ofthethreeinteger
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+int a,b,c;
+    {
+       cout<<"enterthreenumbers"<<endl;
+   cin>>a>>b>>c;
+cout<<"product ="<<a*b*c<<endl; //assignment of product 
+
+ }
+  return 0; //indicatethatheprogram
+}
+
+2,exercise 
+//addtionoftwonumbeprogram
+#include<iostream>
+using namespace std;
+int main()
+{
+int a, b, c;
+cout << "Enter two integers to add\n";
+cin >> a >> b;
+c = a + b;
+cout <<"Sum of the numbers: " << c << endl;
+return 0;
+}
+
+//subtract the two number
+#include<iostream>
+using namespace std;
+int main( )
+{
+int x, y, subtract;
+
+cout << "Enter two integers for subtract: ";
+cin >> x >> y;
+
+subtract = x - y;
+
+cout << x << " - " << y << " = " << subtract;
+return 0;
+}
+
+
+//product of the two number
+#include<iostream>
+using namespace std;
+int main( )
+{
+double firstNumber, secondNumber, productOfTwoNumbers;
+
+cout << "Enter two numbers: ";
+cin >> firstNumber >> secondNumber;
+
+productOfTwoNumbers = firstNumber * secondNumber;
+
+cout << "Product = " << productOfTwoNumbers;
+return 0;
+}
+
+//program of division
+#include<iostream>
+using namespace std;
+int main( )
+{
+double firstNumber, secondNumber, divisionOfTwoNumbers;
+
+cout << "Enter two numbers: ";
+cin >> firstNumber >> secondNumber;
+
+Divisionoftwonumber = firstNumber / secondNumber;
+
+cout << "division = " << divisionOfTwoNumber;
+}
+ return 0;
+}
+
+//thegreaterandthesmallernumber
+#include<iostream>
+using namespace std;
+int main( )
+{
+int a,b,c,greatest;
+
+cout<<"Enter three numbers : ";
+cin>>a>>b>>c;
+
+greatest=(a>b&&a>c)?a:(b>c)?b : c;//using tertiary operator
+
+cout<<"Greatest number is "<< greatest;
+return 0;
+}
+    
+
+3,exercise 
+
+//programtofindthecercmferenceofcricle
+#include<iostream>
+using namespace std;
+int main()
+{
+int circumference , radius;
+{
+cout << "Enter the radius of circle:";
+cin >> radius;
+circumference = 3.14*3.14*radius;
+cout << "circumference of circle: " << circumference << endl;
+}
+return 0;
+}
+
+4,exercise 
+//programtotherootsofthequadraticequastion
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+float a,b,c,x1,x2;
+cout<<"entervaluesofa,b,c:";
+cin>>a;
+cin>>b;
+cin>>c;
+float d=(b*b)-(4*a*c);
+if(d==0)
+{
+x1=x2=(-b/2*a);
+cout<<"rootsarereal&equalx1=x2"<<x1;
+}
+else if(d>0)
+{
+x1=((-b)+sqrt(d)/(2*a));
+x2=((-b)-sqrt(d)/(2*a));
+cout<<"roots are x1="<<x1<<"x2="<<x2;
+}
+else
+{
+cout<<"roots are imaginar";
+}
+ return 0;
+}
+
+
+
+
+
