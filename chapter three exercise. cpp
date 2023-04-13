@@ -1,0 +1,210 @@
+﻿Chapter three exercise 
+exercise one
+#include<iostream>
+using namespace std;
+int main()
+ {
+int x=3;
+int y=2;
+if (x>2)
+{
+if (y>2)
+{
+int z=x+y;
+cout<<"zis"<<z<<endl;
+}
+}
+else
+cout<<"zis"<<endl;
+return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+char ch;
+cout<<"eenteralphabet:\n";
+cin>>ch;
+if (ch =='a'||ch =='A'||ch =='E'||ch =='i'||ch =='o')
+{
+cout<<ch<<"ch isvowel"<<endl;
+}
+else
+{
+cout<<"ch is not vowel"<<endl;
+}
+return 0;
+}
+//studentgrade else if stetment 
+#include<iostream>
+using namespace std;
+int main()
+{
+  int grade;
+  cout<<"enterthestudent grade:";
+  cin>>grade;
+ if ( grade >=95 )  
+  cout << "\n You Get Grade A+ "; 
+ else if (grade >=85) 
+   cout << "\n You Get Grade A "; 
+ else if (grade >=80)
+    cout << "\n You Get Grade A- "; 
+ else if (grade >=75)  
+  cout << "\n You Get Grade B+ ";
+else if(grade >=70)
+cout<<"\n you get grade B ";
+else if (grade >=65)
+cout<<"\n you get grade B- ";
+else if(grade>=60)
+cout<<"\n you get grade C+ ";
+else if(grade >=50-60)
+cout<<"\n you get grade C ";
+else if(grade<50)
+		{
+ 		 cout << "\n You Get Grade F ";
+		
+		}
+ return 0;
+     }
+
+Exercise two.
+//thegreatestofthethreenumber
+#include<iostream>
+using namespace std;
+int main( )
+{
+int a,b,c,greatest;
+cout<<"Enter three numbers : ";
+cin>>a>>b>>c;
+greatest=(a>b&&a>c)?a:(b>c)?b : c;//using tertiary operator
+cout<<"Greatest number is "<< greatest;
+return 0;
+}
+//thesumofthe numbers 
+#include<iostream>
+using namespace std;
+int main( )
+{
+int counter=1,sum=0;
+
+while (counter<=100)
+{
+cout<<counter <<endl;
+sum=sum +counter ;
+counter++;
+cout<<"thevalueofsum"<<sum<<endl;
+}
+return 0;
+}
+
+//thewhithoutdivisibleby3,2and5
+#include<iostream>
+using namespace std;
+int main()
+{
+int i=0,sum=0;
+for (i=0;i<=100;i++)
+if (i%2==0,i%3==0,i%5==0)
+sum=sum +i ;
+i++;
+cout<<"thevalueofsum"<<sum<<endl;
+ return 0;
+}
+
+Excerise three
+//forloopfactorial
+#include<iostream>
+using namespace std;
+int main( )
+{
+int i,fact=1,number;
+
+cout<<"Enter any Number: ";
+cin>>number;
+
+for(i=1;i<=number;i++){
+
+fact=fact*i;
+}
+
+cout<<"factorialof"<<number<<"is="<<fact<<endl;
+ return 0;
+}
+
+
+
+
+//c++programwhileloopfactorial
+#include<iostream>
+using namespace std;
+int main()
+{
+int n=8;
+int factorial=1;
+int i=1;
+while(i<=n){
+factorial *=i;
+i++;
+}
+cout<<factorial;
+return 0;
+}
+
+//c++programwhileloopfactorial
+#include<iostream>
+using namespace std;
+int main()
+{
+int n=8;
+int factorial=1;
+int i=1;
+while(i<=n){
+factorial *=i;
+i++;
+}
+cout<<factorial;
+return 0;
+}
+
+//c++programdowhileloofactorial
+#include<iostream>
+using namespace std;
+int main()
+{
+int n,f=1,i=1;
+cout<<"\nenterthenumber:";
+cin>>n;
+do{
+f=f*i;
+i++;
+}
+while(i<=n);
+cout<<"\nthefactorialof"<<n<<"is="<<f<<endl;
+}
+Excerise four 
+ //c++programwhilelooaverage1-
+#include<iostream>
+using namespace std;
+int main()
+{
+int average;
+int x=1;
+int counter=1;
+int sum=0;
+while(x<=10)
+{
+cout<<"enterascore";
+cin>>x;
+sum+=x;
+++counter;
+average=sum/counter ;
+}
+cout<<"the value ofaver"<<counter<<x<<endl;
+return 0;
+}
+
+
+
+
+    
+
