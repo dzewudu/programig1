@@ -1,0 +1,137 @@
+﻿
+Chaptetr two the maindemonstrate/topics 
+Introduction to c++ proogram
+//c++syntax
+#include<iostream>
+using namespace std;
+int main()
+{
+cout << "Hello World";
+return 0;
+}
+//c++output
+#include<iostream>
+using namespace std;
+int main()
+{
+cout << "Hello World\n"; //print hello world
+return 0; 
+}
+
+//C++comment
+#include<iostream>
+using namespace std;
+int main() {
+cout<<"hello world"; //printtheword hello world
+return 0;
+}
+/*this ismltilinecomment
+/*thecodbelow willprinthellow world tothescreen
+#include<iostream>
+using namespace std;
+int main()
+{
+cout << "Hello every one";/*Print the word
+return 0;
+//c++singlelinecomment
+#include<iostream>
+using namespace std;
+int main()
+{
+int mynum=10;
+mynum=5;
+cout << "mynum";//output
+return 0;
+}
+//variable declaretion
+#include<iostream>
+using namespace std;
+int main()
+{
+int x,y,z;
+x=y=z=10;
+cout << "x+y+z";//output
+return 0;
+}
+//intdatatype
+#include<iostream>
+#include<iostream>
+using namespace std;
+int main()
+{
+int mynum=5;//integer
+cout << "mynum="<<mynum<<endl;//output
+return 0;
+}
+
+//floatdatatype
+#include<iostream>
+#include<iostream>
+using namespace std;
+int main()
+{
+float  mynum=5.65;//floatingnumberpoint
+cout << "mynum="<<mynum<<endl;//output
+return 0;
+}
+//double datatype
+#include<iostream>
+#include<iostream>
+using namespace std;
+int main()
+{
+double mynum=19.99;
+cout << "mynum="<<mynum<<endl;//output
+return 0;
+}
+
+//character datatype
+#include<iostream>
+#include<iostream>
+using namespace std;
+int main()
+{
+char mygrade='B';
+cout << "mygrade";
+return 0;
+}
+//assignment operator
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b,c;
+a=10;
+b=4;
+c=a+b;
+cout<<"the value of c="<<c<<endl;
+return 0;
+}
+
+//assignment operator
+ #include<iostream>
+using namespace std;
+int main()
+{
+int a,b;
+a=12;
+b=4;
+cout<<"a:";
+cout<<a;
+cout<<"b:";
+cout<<b;
+return 0;
+}
+
+ //compound assignment operator 
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b=3;
+a+=2;
+cout<<a;
+return 0;
+}
+
+
