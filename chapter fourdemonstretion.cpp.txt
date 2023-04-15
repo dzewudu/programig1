@@ -1,0 +1,159 @@
+﻿chapters four
+//One dimentional Array
+#include<iostream>
+using namespace std;
+int main(){
+int array[5]={1,7,9,4,5};
+for (int i=0;i<5;i++)
+{
+cout<<"array[i]"<<"";
+}
+return 0;
+}
+
+//the sumofthearray.  
+#include<iostream>
+using namespace std;
+int main(){
+int array[10],i,sum=0;
+double average;{
+cin>>array[i];
+sum=sum+array[i];
+}
+cout<<"sum ofarrays:"<<sum<<endl;
+}
+    
+// C++ Program to print the elements of a Two-Dimensional array
+#include<iostream>
+using namespace std;  
+int main()
+{
+    // an array with 3 rows and 2 columns.
+    int x[3][2] = {{0,1}, {2,3}, {4,5}};  
+    // output each array element's value
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            cout << "Element at x[" << i
+                 << "][" << j << "]: ";
+            cout << x[i][j]<<endl;
+        } }
+    return 0;
+}
+
+//threedimentionalarray
+#include<iostream>
+ using namespace std;
+ int main() {
+ int i, j, k;
+ int threeDimArr[3][4][2] = { { {1, 2}, {3, 4}, {5, 6}, {7, 8} }, { {9, 8}, {7, 6}, {5, 4}, {3, 2} }, { {0, 3}, {5, 7}, {9, 2}, {4, 6} } };
+ for(i=0; i<3; i++) {
+ for(j=0; j<4; j++){
+ for(k=0; k<2; k++)
+ cout<<threeDimArr[i][j][k]<<" ";
+ cout<<endl;
+ } cout<<endl;
+ } cout<<endl;
+ return 0;
+ }
+//stringprogram
+#include<iostream>
+using namespace std;
+int main()
+{
+ char str[70];
+cout<<"enter astring:";
+cin>>str;//readstringfromkeybored
+cout<<"hereisyourstring:";
+cout<<str;
+return 0;
+}
+
+//strcpy(tostringfrom-string)
+#include<iostream>
+using namespace std;
+
+int main()
+{
+ char a[10];
+strcpy (a,"hello");
+cout<<a;
+return 0;
+}
+    
+
+
+
+//strcat(string_1, string_2) — Concatenation of Strings :
+ #include <iostream>
+using namespace std;
+ int main(){ 
+  char s1[21], s2[11];
+   strcpy(s1, "hello"); 
+  strcpy(s2, "them ");
+   strcat(s1, s2);
+   cout << s1 << endl; 
+  cout << s2 << endl;
+   return(0);
+} 
+    //strcat(string_1, string_2) — Concatenation of Strings :
+ #include <iostream>
+using namespace std;
+ int main(){ 
+ char str1[30];
+      strcpy(str1, "abc");
+      cout << str1 << endl;
+      strcat(str1, "def");
+      cout << str1 << endl; 
+      char str2[] = "xyz";
+      strcat(str1, str2);
+      cout << str1 << endl;
+      str1[4] = '\0';
+      cout << str1 << endl;
+return 0;
+}
+//string coparetion
+#include <iostream>
+using namespace std;
+int main() {
+      cout << strcmp("abc", "def") << endl;
+      cout << strcmp("def", "abc") << endl;
+      cout << strcmp("abc", "abc") << endl;
+      cout << strcmp("abc", "abcdef") << endl;
+      cout << strcmp("abc", "ABC") << endl;
+ system("PAUSE");
+ return 0;
+}   
+//stringaddress inc++.
+#include <iostream>
+using namespace std;
+int main()
+{
+	int var1 = 3;
+	int var2 = 24;
+	int var3 = 17;
+	cout << &var1 << endl;
+	cout << &var2 << endl;
+	cout << &var3 << endl;
+	return 0;
+}
+//pointeradddressc++program. 
+#include <iostream>
+using namespace std;
+int main(){
+    int *pc, c;
+    c = 5;
+    cout << "Address of c (&c): " << &c << endl;
+    cout << "Value of c (c): " << c << endl << endl;
+    pc = &c; // Pointer pc holds the memory address of variable c
+    cout << "Address that pointer pc holds (pc): "<< pc << endl;
+    cout << "Content of the pointer pc holds (*pc): " << *pc << endl << endl;    c = 11; // The content inside memory address &c is changed from 5 to 11.
+    cout << "Address pointer pc holds (pc): " << pc << endl;
+    cout << "Content of the pointer pc holds (*pc): " << *pc << endl << endl;
+    *pc = 2; 
+    cout << "Address of c (&c): " << &c << endl;
+    cout << "Value of c (c): " << c << endl << endl;
+    return 0;
+}
+
